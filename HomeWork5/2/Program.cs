@@ -15,7 +15,7 @@ int[] fillArray(int[] arr)
     return arr;
 }
 
-int mySumArray(int[] arr)
+int mySumArrayUneven(int[] arr)
 {
     int length = arr.Length;
     int index = 0;
@@ -33,4 +33,4 @@ int[] array = new int[5];
 fillArray(array);
 
 Console.WriteLine(String.Join(" ", array));
-Console.WriteLine(mySumArray(array));
+Console.WriteLine(mySumArrayUneven(array));
