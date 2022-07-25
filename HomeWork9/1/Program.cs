@@ -11,9 +11,10 @@ void SeriesNumbers()
     Console.Write("Введите второе число: ");
     int b = Convert.ToInt32(Console.ReadLine());
 
+    Console.Write("Ряд чисел между парвым и вторым --> ");
+
     if (a < b)
     {
-        Console.Write("Ряд чисел между парвым и вторым --> ");
         for (int count = a; count <= b; count++)
         {
             Console.Write($"{a++} ");
@@ -21,7 +22,6 @@ void SeriesNumbers()
     }
     else
     {
-        Console.Write("Ряд чисел между парвым и вторым --> ");
         for (int count = b; count <= a; count++)
         {
             Console.Write($"{b++} ");
