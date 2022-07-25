@@ -6,19 +6,27 @@
 
 void SeriesNumbers()
 {
-    Console.Write("Введите начальное число: ");
+    Console.Write("Введите первое число: ");
     int a = Convert.ToInt32(Console.ReadLine());
-    Console.Write("Введите конечное число: ");
+    Console.Write("Введите второе число: ");
     int b = Convert.ToInt32(Console.ReadLine());
 
     if (a < b)
     {
+        Console.Write("Ряд чисел между парвым и вторым --> ");
         for (int count = a; count <= b; count++)
         {
             Console.Write($"{a++} ");
         }
     }
-    else Console.WriteLine("Начальное число должно быть меньше конечного!");
+    else
+    {
+        Console.Write("Ряд чисел между парвым и вторым --> ");
+        for (int count = b; count <= a; count++)
+        {
+            Console.Write($"{b++} ");
+        }
+    }
 }
 
 SeriesNumbers();
